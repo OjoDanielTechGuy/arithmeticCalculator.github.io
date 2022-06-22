@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmetic Calculator</title>
+  </head>
+  <body>
+    <h3>Basic Arithmetic</h3>
+    <script>
+      //taking the operator sign from user
+      let operator = prompt("Enter operator(+, -, *, or /");
+
+      //taking the first input from user
+      const num1 = parseFloat(prompt("Enter first number:"));
+
+      //taking the second input from user
+      const num2 = parseFloat(prompt("Enter second number: "));
+
+      let result;
+
+      //using the ifelse statement to iterate on different operator
+      if (operator == "+") {
+        result = num1 + num2;
+      } else if (operator == "-") {
+        result = num1 - num2;
+      } else if (operator == "*") {
+        result = num1 * num2;
+      } else if (operator == "/") {
+        result = num1 / num2;
+      } else {
+        alert("Invalid Operator Input");
+      }
+
+      prompt("Result: ", +result);
+    </script>
+  </body>
+</html>
